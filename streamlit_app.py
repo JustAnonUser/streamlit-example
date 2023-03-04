@@ -6,7 +6,8 @@ import numpy as np
 
 st.title('Hey you!...')
 st.title('...')
-st.title('...')
+st.title('..')
+st.title('.')
 
 
 DATE_COLUMN = 'date/time'
@@ -33,8 +34,5 @@ data_load_state2 = st.text('That text was supposed to change...')
 data = load_data(16000)
 # Notify the reader that the data was successfully loaded.
 data_load_state2.text('Hope it did it')
-
-data = load_data(20000)
-data_load_state3 = st.text('Now something interesting...')
 
 
