@@ -34,10 +34,3 @@ data = load_data(10000)
 # Notify the reader that the data was successfully loaded.
 data_load_state2.text('Hope it did it...Ahora algo cool, espero...')
 
-
-
-chart_data = pd.DataFrame(
-    np.random.randn(20, 3),
-    columns=["a", "b", "c"])
-
-st.bar_chart(chart_data)
