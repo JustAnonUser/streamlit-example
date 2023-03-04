@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.subheader('Number of pickups by hour')
+
 
 st.title('Hey you!...')
 st.title('...')
@@ -26,11 +26,14 @@ data_load_state = st.text('I´m trying to learn this shit')
 data = load_data(50000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text('Hopefully i´l do it')
-data = load_data(10000)
+data = load_data(12000)
 # Create a text element and let the reader know the data is loading.
 data_load_state2 = st.text('That text was supposed to change...')
 # Load 10,000 rows of data into the dataframe.
-data = load_data(15000)
+data = load_data(16000)
 # Notify the reader that the data was successfully loaded.
 data_load_state2.text('Hope it did it')
+
+data = load_data(20000)
+st.subheader('Now let's do something interesting')
 
