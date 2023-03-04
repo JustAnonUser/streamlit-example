@@ -41,4 +41,3 @@ chart_data = pd.DataFrame(
     columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
-
