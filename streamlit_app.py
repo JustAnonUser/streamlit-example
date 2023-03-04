@@ -43,8 +43,15 @@ hist_values = np.histogram(
 st.bar_chart(hist_values)
 
 
-curl --request GET 'https://api.apilayer.com/exchangerates_data/live?base=USD&symbols=EUR,GBP' \
---header 'apikey: bAnevnVZcReKRPYK9w1rZRCB5C1FGmqa'
+import streamlit as st
+import pandas as pd
+import numpy as np
+
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
+
+st.area_chart(chart_data)
 
 
 
