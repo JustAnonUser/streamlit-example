@@ -42,10 +42,8 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
-data = load_data(24000)
-# Notify the reader that the data was successfully loaded.
-data_load_state3.text('Ahora entra a la parte secreta...')
 
-
+# Create a text element and let the reader know the data is loading.
+data_load_state3 = st.text('Una parte secreta')
 
 
