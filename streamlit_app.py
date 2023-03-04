@@ -44,7 +44,7 @@ st.bar_chart(chart_data)
 
 data = load_data(24000)
 # Notify the reader that the data was successfully loaded.
-data_load_state2.text('Ahora entra a la parte secreta...')
+data_load_state3.text('Ahora entra a la parte secreta...')
 
 
 
