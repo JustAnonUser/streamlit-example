@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 
 
-
 st.title('Hey you!...')
 st.title('...')
 st.title('..')
@@ -36,10 +35,6 @@ data = load_data(14000)
 data_load_state2.text('Hope it did it...Ahora algo cool, espero...')
 
 
-
-import streamlit as st
-import pandas as pd
-import numpy as np
 
 chart_data = pd.DataFrame(
     np.random.randn(20, 3),
