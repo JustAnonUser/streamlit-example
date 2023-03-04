@@ -46,7 +46,6 @@ st.bar_chart(chart_data)
 # Create a text element and let the reader know the data is loading.
 data_load_state3 = st.text('Una parte secreta')
 
-pip install streamlit-authenticator
 import streamlit as st
 import streamlit_authenticator as stauth
 names = ['Andres Jaquez','Ernesto Valenciana']
