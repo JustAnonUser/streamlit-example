@@ -33,7 +33,7 @@ data_load_state2 = st.text('That text was supposed to change...')
 # Load 10,000 rows of data into the dataframe.
 data = load_data(2300)
 # Notify the reader that the data was successfully loaded.
-data_load_state2.text('Hope it did it...Ahora una gráfica chida')
+data_load_state2.text('Hope it did it ...    Ahora una gráfica chida')
 
 
 chart_data = pd.DataFrame(
