@@ -42,32 +42,3 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
-
-# Create a text element and let the reader know the data is loading.
-data_load_state3 = st.text('Una parte secreta')
-
-import streamlit as st
-import streamlit_authenticator as stauth
-names = ['Andres Jaquez','Ernesto Valenciana']
-usernames = ['jaquez','valenciana']
-passwords = ['andres','ernesto']
-
-hashed_passwords = stauth.hasher(passwords).generate()
-authenticator = stauth.authenticate(names,usernames,hashed_passwords,
-    'some_cookie_name','some_signature_key',cookie_expiry_days=30)
-name, authentication_status = authenticator.login('Login','main')
-if authentication_status:
-    st.write('Pasaste la prueba! *%s*' % (name))
-    st.title('Croe que puedo programar aqui')
-elif authentication_status == False:
-    st.error('Datos incorectos')
-elif authentication_status == None:
-    st.warning('Ingresa con tu usuario y contraseña')
-
-if st.session_state['authentication_status']:
-    st.write('Holap! *%s*' % (st.session_state['name']))
-    st.title('Entraste!')
-elif st.session_state['authentication_status'] == False:
-    st.error('Datos incorectos')
-elif st.session_state['authentication_status'] == None:
-    st.warning('Ingresa con tu usuario y contraseña')
