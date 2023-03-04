@@ -43,8 +43,11 @@ chart_data = pd.DataFrame(
 st.bar_chart(chart_data)
 
 
+pip install streamlit-authenticator
+
 import streamlit as st
 import streamlit_authenticator as stauth
+
 names = ['John Smith','Rebecca Briggs']
 usernames = ['jsmith','rbriggs']
 passwords = ['123','456']
