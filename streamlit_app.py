@@ -19,10 +19,10 @@ def load_data(nrows):
 # Create a text element and let the reader know the data is loading.
 data_load_state = st.text('I´m trying to learn this shit')
 # Load 10,000 rows of data into the dataframe.
-data = load_data(2000)
+data = load_data(20000)
 # Notify the reader that the data was successfully loaded.
 data_load_state.text('Streamlit es raro...')
-data = load_data(8000)
+data = load_data(80000)
 # Create a text element and let the reader know the data is loading.
 data_load_state2 = st.text('That text was supposed to change...')
 # Load 10,000 rows of data into the dataframe.
