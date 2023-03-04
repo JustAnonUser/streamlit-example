@@ -41,3 +41,11 @@ chart_data = pd.DataFrame(
     columns=["a", "b", "c"])
 
 st.bar_chart(chart_data)
+
+data = load_data(24000)
+# Notify the reader that the data was successfully loaded.
+data_load_state2.text('Ahora entra a la parte secreta...')
+
+
+
+
